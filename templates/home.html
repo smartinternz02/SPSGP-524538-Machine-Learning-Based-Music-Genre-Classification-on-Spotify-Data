@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Machine Learning Music Genre Classification</title>
+    <link rel="stylesheet" type="text/css" href="\static\styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Music Genre Classification</h1>
+      <p>A Machine Learning Project.</p>
+    </div>
+
+    <div class="navbar">
+      <a href="{{url_for('my_home')}}">Home</a>
+      <a href="#">GitHub</a>
+      <a href="#">Project Report</a>
+      <a href="{{url_for('prediction')}}" class="right">Predict</a>
+    </div>
+
+    <div class="row">
+      <div class="side">
+        <h2>Dataset</h2>
+        <p>Here's the <a href="https://drive.google.com/drive/folders/1Arn525sgXuEQhtqKzZI1Hy-UgcVLEt_3">link</a> to the dataset.<br><br>
+        The above Spotify dataset has <b>42,305 instances</b> and <b>22 features</b>.</p><br>
+        <p>
+          The dataset includes the following features:<br><br>
+          Danceability, Energy, Key, Loudness, Mode, Speechiness, Acousticness, Instrumentalness, Liveness, Valence, Tempo, Duration, Time Signature.
+        </p>
+        <p>
+          The dataset covers a variety of music genres, including:
+        </p>
+        <ul>
+          <li>Dark Trap</li>
+          <li>Underground Rap</li>
+          <li>Trap Metal</li>
+          <li>Emo</li>
+          <li>Rap</li>
+          <li>RnB</li>
+          <li>Pop</li>
+          <li>Hiphop</li>
+          <li>Tech House</li>
+          <li>Techno</li>
+          <li>Trance</li>
+          <li>Psytrance</li>
+          <li>Trap</li>
+          <li>DnB</li>
+          <li>Hardstyle</li>
+        </ul>
+        <p>
+          The combination of these features and genres forms the basis for training the machine learning models in order to classify songs into their respective genres.
+        </p>
+      </div>
+      <div class="main">
+        <h2>About the Project</h2>
+        <img width="830" height="240" src="/static/music-genre.jpg" alt="music-genre">
+        <p>
+          The <b>Machine Learning Based Music Genre Classification on Spotify Data</b> project aims to predict music genres using machine learning algorithms trained on Spotify data. By leveraging the vast amount of information available in the audio features of songs, the project seeks to automatically classify songs into different genres based on their characteristics.
+        </p>
+        <p>
+          The project utilizes a dataset consisting of a large collection of songs from various genres available on Spotify. These songs are associated with audio features such as tempo, energy, danceability, instrumentalness, loudness, speechiness, and valence. Machine learning algorithms, such as decision trees, random forests, or neural networks, are trained on this dataset to learn the patterns and relationships between the audio features and the corresponding genre labels.
+        </p>
+        <p>
+          By leveraging the trained machine learning models, users can input the audio features of a song, and the system will predict its most likely genre. This project not only provides a convenient tool for music enthusiasts and industry professionals but also showcases the potential of machine learning in music analysis and classification.
+        </p>
+        <br>
+        <h2>Result</h2>
+        <p>
+          After training and evaluating the machine learning models on the Spotify dataset, the project achieved an accuracy of <b>78%</b> using the Bagging Classifier algorithm for music genre classification. This accuracy score indicates the percentage of correctly predicted genres for the given songs.
+        </p>
+        </div>
+    </div>
+  </body>
+</html>

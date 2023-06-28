@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Machine Learning Music Genre Classification</title>
+    <link rel="stylesheet" type="text/css" href="\static\styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="header">
+        <h1>Music Genre Classification</h1>
+        <p>A Machine Learning Project.</p>
+    </div>
+        
+    <div class="navbar">
+      <a href="{{url_for('my_home')}}">Home</a>
+      <a href="#">GitHub</a>
+      <a href="#">Project Report</a>
+      <a href="{{url_for('prediction')}}" class="right">Predict</a>
+    </div>
+    
+    <div class="container">
+      <h2 style="text-align: center;">Enter Song Information</h2>
+      <form action="/predict" method="post">
+        <div class="row">
+          <div class="col-25">
+            <label for="f1">Danceability</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="f1" name="danceability" required>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-25">
+            <label for="f2">Energy</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="f2" name="energy" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="f3">Loudness</label>
+          </div>
+          <div class="col-75">
+              <input type="text" id="f3" name="loudness" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="f4">Speechiness</label>
+          </div>
+          <div class="col-75">
+              <input type="text" id="f4" name="speechiness" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="f5">Acousticness</label>
+          </div>
+          <div class="col-75">
+              <input type="text" id="f5" name="acousticness" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="f6">Instrumentalness</label>
+          </div>
+          <div class="col-75">
+              <input type="text" id="f6" name="instrumentalness" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="f7">Liveness</label>
+          </div>
+          <div class="col-75">
+              <input type="text" id="f7" name="liveness" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="f8">Valence</label>
+          </div>
+          <div class="col-75">
+              <input type="text" id="f8" name="valence" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="f9">Tempo</label>
+          </div>
+          <div class="col-75">
+              <input type="text" id="f9" name="tempo" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="f10">Duration in Milli Seconds</label>
+          </div>
+          <div class="col-75">
+              <input type="text" id="f10" name="duration_ms" required>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
