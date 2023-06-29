@@ -2,9 +2,10 @@
     box-sizing: border-box;
   }
   
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
   /* Style the body */
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
   }
   
@@ -67,7 +68,7 @@
   .side {
     -ms-flex: 30%; /* IE10 */
     flex: 30%;
-    background-color: #f1f1f1;
+    background-color: #dbdbdb;
     padding: 20px;
   }
   
@@ -165,12 +166,12 @@
   }
 
   .result {
-    padding: 100px;
+    padding: 150px;
     text-align: center;
-    background: #f1f1f1;
+    background-image: url('https://media.giphy.com/media/TlK63EChAGgxq7kTcFW/giphy.gif');
     color: rgb(0, 0, 0);
-}
+  }
 
-.result h1 {
-    font-size: 30px;
-}
+  .result h1 {
+      font-size: 30px;
+  }
