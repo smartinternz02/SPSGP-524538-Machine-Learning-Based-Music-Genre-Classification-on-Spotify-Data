@@ -1,21 +1,25 @@
 # Machine Learning Based Music Genre Classification on Spotify Data
 
+ The Machine Learning Based Music Genre Classification on Spotify Data project aims to predict music genres using machine learning algorithms trained on Spotify data. By leveraging the vast amount of information available in the audio features of songs, the project seeks to automatically classify songs into different genres based on their characteristics.
+
 ## Dataset
+Here's the [link](https://drive.google.com/drive/folders/1Arn525sgXuEQhtqKzZI1Hy-UgcVLEt_3) to the dataset.
 
-The dataset used in this project is sourced from Spotify. It consists of a collection of music tracks with various audio features such as tempo, danceability, energy, and acousticness. The dataset contains labelled genre information for each track, allowing for supervised genre classification.
-
-Preprocessing steps:
-- Data cleaning: Handling missing values, removing duplicates, etc.
-- Feature selection: Select relevant audio features for genre classification.
-- Feature normalization: Scaling the features to a standard range.
+The above Spotify dataset has 42,305 instances and 22 features.
 
 ## Result
+After training and evaluating the machine learning models on the Spotify dataset, the project achieved an accuracy of 78% using the Bagging Classifier algorithm for music genre classification. This accuracy score indicates the percentage of correctly predicted genres for the given songs.
 
-The project achieved an accuracy of 78% using the Bagging Classifier algorithm. Some key findings include:
-- Certain audio features (e.g., energy, tempo) were more influential in distinguishing between specific genres.
-- The model's performance was evaluated using various evaluation metrics, such as precision, recall, and F1 score.
+## Screenshots
 
-## Demo video
-- link
+![App Screenshot](https://raw.githubusercontent.com/psnv03/music-genre-prediction/main/Screenshorts/ss-1.png)
+![App Screenshot](https://raw.githubusercontent.com/psnv03/music-genre-prediction/main/Screenshorts/ss-4.png)
+![App Screenshot](https://raw.githubusercontent.com/psnv03/music-genre-prediction/main/Screenshorts/ss-5.png)
 
+## Flowchart
 
+![App Screenshot](https://raw.githubusercontent.com/psnv03/music-genre-prediction/main/Screenshorts/flow-chart-1.png)
+
+## Demo
+
+Insert gif or link to demo
