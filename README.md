@@ -22,4 +22,4 @@ After training and evaluating the machine learning models on the Spotify dataset
 
 ## Demo
 
-Insert gif or link to demo
+Here's the [link](https://drive.google.com/file/d/1QjEB9UzolCokZWKZr4C0GY1C3yYS1LMF/view?usp=drive_link) to demo of the project.
